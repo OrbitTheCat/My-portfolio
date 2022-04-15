@@ -52,7 +52,7 @@ nav.nav ul li a.nav-name {
     position: relative;
     background: linear-gradient(90deg, #D72323, #892CDC, #D72323);
     background-size: 400%;
-    font-size: 35px;
+    font-size: 65px;
     letter-spacing: 0.5px;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -66,7 +66,7 @@ nav.nav ul li a.nav-btn {
     position: relative;
     padding: 10px;
     color: white;
-    font-size: 25px;
+    font-size: 45px;
     justify-items: space-between;
     text-decoration: none;
     transition: ease-out 0.5s;
@@ -76,12 +76,11 @@ nav.nav ul li a.nav-btn-dnt {
     position: relative;
     top: 19px;
     padding: 10px;
-    font-size: 35px;
     justify-items: space-between;
     text-decoration: none;
     transition: ease-out 0.5s;
     background: linear-gradient(90deg, #62fcaf, lime, #62fcaf);
-    font-size: 37px;
+    font-size: 55px;
     background-size: 400%;
     letter-spacing: 0.5px;
     -webkit-text-fill-color: transparent;
@@ -264,7 +263,7 @@ ul li a.btn-projects {
 
 .about-title {
     padding-bottom: 12px;
-    font-size: 3.75rem;
+    font-size: 6rem;
     margin: 0 24px;
     text-align: center;
     font-weight: 700;
