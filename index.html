@@ -11,89 +11,89 @@
   <title>Orbit</title>
   <link rel="stylesheet" href="./stylesheet/css/home.css">
   <link rel="stylesheet" href="/stylesheet/css/util.css">
+  <link rel="stylesheet" href="/stylesheet/css/nav-bar.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="/stylesheet/css/util.css">
 </head>
 
-<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-    <nav class="nav">
-        <ul>
-            <li>
-                <a class="nav-name">ORBIT </a>
-                <a class="nav-btn" href="#home"> Home </a>
-                <a class="nav-btn" href="#about">About </a>
-                <a class="nav-btn" href="#projects">Projects </a>
-                <a class="nav-btn-dnt" target="_blank" href="https://ko-fi.com/manonorbit"> Donate</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="content" id="home">
-      <div id="bg">
-        <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1898" height="243"></canvas>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" class="reveal">
+  <nav id="nav" style="width: 100vw; backdrop-filter: blur(5px); box-shadow: inset 0 -1px 0 0 hsla(0,0%,100%,0.1)">
+    <div class="nav-container-custom nav-wrapper">
+      <div class="brand">
+        <span>
+          <strong class="shine" style="color: white; font-family: monospace; font-size: 50px">ORBIT</strong>
+        </span>
       </div>
-        <div class="social reveal">
-
-            <br>
-            <br>
-            <a target="_blank" rel="noreferrer noopener" href="#footer">
-                <img alt="link to my discord" src="/assets/img/discord.png" class="ds">
-            </a>
-            <br>
-            <br>
-            <a target="_blank" href="https://github.com/OrbitTheCat" rel="noreferrer noopener">
-              <img alt="link to my GitHub" src="/assets/img/github.png" class="gh">
-            <br>
-            <br>
-            <a target="_blank" href="https://ko-fi.com/manonorbit" rel="noreferrer noopener">
-                <img alt="link to my ko-fi donations" src="/assets/img/ko-fi.png" class="ki">
-            </a>
-        </div>
-        <div class="text reveal">
-          <h1 class="shine-name" style="visibility: visible;"> ORBIT.</h1>
-          <p class="paragraph" style="visibility: visible;">Javascript &amp; web developer.</p>
-          <ul>
-            <li>
-              <a class="btn-projects reveal" href="#projects" style="visibility: visible;">Projects</a>
-            </li>
-        </ul>
-        </div>
+      <div class="hamburger" style="padding-left: 23px;">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-list">
+        <li><a class="nav-link" data-scroll="#">Home</a></li>
+        <li><a class="nav-link" data-scroll="#about">About</a></li>
+        <li><a class="nav-link" target="_blank" data-scroll="#projects">Projects</a> </li>
+        <li><a class="nav-link donate" target="_blank" href="https://ko-fi.com/manonorbit">Donate</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+  <div class="content" id="">
+    <div id="bg"></div>
+    <div class="social">
+      <a href="#footer" id="discord" target="_blank" class="icon">
+        <img src="/assets/img/discord.png" class="fab fa-discord"></img>
+      </a>
+      <a href="https://www.instagram.com/krystofnevisvujigxd" id="instagram" target="_blank" class="icon">
+        <img src="/assets/img/insta.png" class="fab fa-instagram"></img>
+      </a>
+      <a href="https://github.com/OrbitTheCat" id="github" target="_blank" class="icon">
+        <img src="/assets/img/github.png" class="fab fa-github"></img>
+      </a>
+    </div>
+    <div class="text">
+      <h1 class="shine head">ORBIT.</h1>
+      <p class="paragraph">Web & Javascript developer</p>
+      <button class="hero-button nav-link" data-scroll="#projects">Projects</button>
+    </div>
+  </div>
     <section id="about" class="about">
-        <div class="section-label reveal">
+        <div class="section-label ">
             <div class="label-number">1</div>
         </div>
-        <div class="about-content d-flex align-center space-between row reveal">
+        <div class="about-content d-flex align-center space-between row ">
             <div class="about-img" style="visibility: visible;">
               <!-- <div class="about-light"></div> -->
             </div>
-            <div class="about-text reveal" style="visibility: visible;">
+            <div class="about-text " style="visibility: visible;">
               <h4 class="about-title c-white" style="visibility: visible;">About Me</h4>
               <p class="about-description grey" style="visibility: visible;">Hello im orbit i'm 14 years old my real name is Kryštof and i am a Javascript, web developer and a computer enthusiast.<br> I have a good knowledge of HTML, CSS, Javascript, Nodejs and more.</p>
             </div>
           </div>
     </section>
     <div class="stats">
-        <section class="statistics reveal">
+        <section class="statistics ">
           <div class="stats-container">
             <div class="stats-item" style="visibility: visible;">
-              <p data-purecounter-start="0" data-purecounter-end="0" class="highlight purecounter" data-purecounter-duration="0">8</p>
+              <p data-purecounter-start="0" data-purecounter-end="1" class="highlight purecounter" id="purecounter" data-purecounter-duration="2">2</p>
               <span class="stats-description">Completed Projects</span>
             </div>
             <div class="stats-item" style="visibility: visible;">
-              <p data-purecounter-start="0" data-purecounter-end="5" class="highlight purecounter" data-purecounter-duration="0">7</p>
+              <p data-purecounter-start="0" data-purecounter-end="5" class="highlight purecounter" id="purecounter" data-purecounter-duration="2">5</p>
               <span class="stats-description">Areas of Knowledge</span>
             </div>
           </div>
         </section>
       </div>
     <section id="projects" class="projects">
-        <div class="section-label reveal">
+        <div class="section-label ">
           <div class="label-number project-label">2</div>
         </div>
-        <h4 class="about-title c-white reveal" style="visibility: visible;">Projects</h4>
-        <p class="about-description grey reveal" style="font-size: 18px; visibility: visible;">Projects I've Made <3</p>
-        <div class="project-content reveal">
+        <h4 class="about-title c-white " style="visibility: visible;">Projects</h4>
+        <p class="about-description grey " style="font-size: 18px; visibility: visible;">Projects I've Made <3</p>
+        <div class="project-content ">
             <div class="card">
                 <div class="card-content">
                 <h3 class="card-heading">Nothing yet</h3>
@@ -116,18 +116,22 @@
     <script>
       if (window.innerWidth > 600) {
         new PureCounter({
-          selector: '.purecounter',
-          start: 0,
-          end: 100,
-          duration: 2,
-          delay: 10,
-          once: true,
-          repeat: false,
-          decimals: 0,
-          legacy: true,
-          filesizing: false,
-          currency: false,
-          separator: false,
+            // Setting that can't' be overriden on pre-element
+            selector: ".purecounter", // HTML query selector for spesific element
+
+            // Settings that can be overridden on per-element basis, by `data-purecounter-*` attributes:
+            start: 0, // Starting number [uint]
+            end: 100, // End number [uint]
+            duration: 2, // The time in seconds for the animation to complete [seconds]
+            delay: 50, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
+            once: true, // Counting at once or recount when the element in view [boolean]
+            pulse: false, // Repeat count for certain time [boolean:false|seconds]
+            decimals: 0, // How many decimal places to show. [uint]
+            legacy: true, // If this is true it will use the scroll event listener on browsers
+            filesizing: false, // This will enable/disable File Size format [boolean]
+            currency: false, // This will enable/disable Currency format. Use it for set the symbol too [boolean|char|string]
+            formater: "us-US", // Number toLocaleString locale/formater, by default is "en-US" [string|boolean:false]
+            separator: false, // This will enable/disable comma separator for thousands. Use it for set the symbol too [boolean|char|string]
         });
       }
     </script>
@@ -150,7 +154,9 @@
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
-      var scroll = new SmoothScroll('. nav a[href*="#"]');
+      var scroll = new SmoothScroll('.nav a[href*="#"]');
     </script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r98/three.js"></script>
+    <script src="https://fariskassim.com/stage/rebel9/teaf/blob/v4/js/perlin.js"></script>
 </body>
 </html>
