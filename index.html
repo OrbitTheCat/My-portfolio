@@ -10,7 +10,10 @@
   <title>Orbit</title>
   <link rel="stylesheet" href="./stylesheet/css/home.css">
   <link rel="stylesheet" href="/stylesheet/css/util.css">
-  <link rel="stylesheet" href="/stylesheet/css/nav-query.css">
+  <link rel="text/html" href="/stylesheet/css/nav-query.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body content="MADE BY ORBIT">
@@ -29,7 +32,7 @@
       <div id="bg">
         <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1898" height="243"></canvas>
       </div>
-        <div class="social">
+        <div class="social reveal">
             <br>
             <br>
             <a target="_blank" href="https://github.com/OrbitTheCat" rel="noreferrer noopener">
@@ -46,49 +49,51 @@
                 <img alt="link to my ko-fi donations" src="/assets/img/ko-fi.png" class="ki">
             </a>
         </div>
-        <div class="text">
+        <div class="text reveal">
           <h1 class="shine-name" style="visibility: visible;"> ORBIT.</h1>
           <p class="paragraph" style="visibility: visible;">Javascript &amp; web developer.</p>
           <ul>
             <li>
-              <a class="btn-projects" href="#projects" style="visibility: visible;">Projects</a>
+              <a class="btn-projects reveal" href="#projects" style="visibility: visible;">Projects</a>
             </li>
         </ul>
         </div>
     </div>
     <section id="about" class="about">
-        <div class="section-label">
+        <div class="section-label reveal">
             <div class="label-number">1</div>
         </div>
-        <div class="about-content d-flex align-center space-between row">
+        <div class="about-content d-flex align-center space-between row reveal">
             <div class="about-img" style="visibility: visible;">
               <!-- <div class="about-light"></div> -->
             </div>
-            <div class="about-text" style="visibility: visible;">
+            <div class="about-text reveal" style="visibility: visible;">
               <h4 class="about-title c-white" style="visibility: visible;">About Me</h4>
               <p class="about-description grey" style="visibility: visible;">Hello im orbit i'm 14 years old my real name is Kryštof and i am a Javascript, web developer and a computer enthusiast.<br> I have a good knowledge of HTML, CSS, Javascript, Nodejs and more.</p>
             </div>
           </div>
     </section>
     <div class="stats">
-        <section class="statistics">
+        <section class="statistics reveal">
           <div class="stats-container">
             <div class="stats-item" style="visibility: visible;">
-              <p data-purecounter-start="0" data-purecounter-end="8" class="highlight purecounter" data-purecounter-duration="0">0</p><span class="stats-description">Completed Projects</span>
+              <p data-purecounter-start="0" data-purecounter-end="8" class="highlight purecounter" data-purecounter-duration="0">8</p>
+              <span class="stats-description">Completed Projects</span>
             </div>
             <div class="stats-item" style="visibility: visible;">
-              <p data-purecounter-start="0" data-purecounter-end="5" class="highlight purecounter" data-purecounter-duration="5">5</p><span class="stats-description">Areas of Knowledge</span>
+              <p data-purecounter-start="0" data-purecounter-end="7" class="highlight purecounter" data-purecounter-duration="0">7</p>
+              <span class="stats-description">Areas of Knowledge</span>
             </div>
           </div>
         </section>
       </div>
     <section id="projects" class="projects">
-        <div class="section-label">
+        <div class="section-label reveal">
           <div class="label-number project-label">2</div>
         </div>
-        <h4 class="about-title c-white" style="visibility: visible;">Projects</h4>
-        <p class="about-description grey" style="font-size: 18px; visibility: visible;">Projects I've Made :)</p>
-        <div class="project-content">
+        <h4 class="about-title c-white reveal" style="visibility: visible;">Projects</h4>
+        <p class="about-description grey reveal" style="font-size: 18px; visibility: visible;">Projects I've Made <3</p>
+        <div class="project-content reveal">
             <div class="card">
                 <div class="card-content">
                 <h3 class="card-heading">Nothing yet</h3>
@@ -103,12 +108,43 @@
     <footer>
       <div class="footer-content">
         <h3>Orbit</h3>
-        <p>Created and Managed by C;\user\Orbit#9824</p>
+        <p>Created with ❤️ by <a class="name-btn" href="https://xd.com">C;\user\Orbit#9824</a></p>
       </div>
     </footer>
-  </script>
+    <!--counting-->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script>
+      if (window.innerWidth > 600) {
+        new PureCounter({
+          selector: '.purecounter',
+          start: 0,
+          end: 100,
+          duration: 2,
+          delay: 10,
+          once: true,
+          repeat: false,
+          decimals: 0,
+          legacy: true,
+          filesizing: false,
+          currency: false,
+          separator: false,
+        });
+      }
+    </script>
+    <!--scroll reveal-->
+    <script>
+      ScrollReveal({
+        reset: false,
+        distance: '60px',
+        duration: 1000,
+        delay: 100
+      });
+
+      ScrollReveal().reveal('.reveal', { delay: 100, origin: 'top' })
+    </script>
     <!--particles js file-->
     <script src="/script/particles.min.js"></script>
+    <!--scripts-->
     <script src="/script/script.js"></script>
 </body>
 </html>

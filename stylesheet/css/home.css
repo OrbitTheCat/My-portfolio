@@ -482,7 +482,6 @@ footer {
 }
 
 .footer-content {
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -513,6 +512,29 @@ footer {
     overflow: hidden;
 }
 }
+
+.name-btn {
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 0.1s;
+}
+
+.name-btn:hover {
+    border-bottom: 2px solid white ;
+}
+
+
+/*.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}*/
 
 @keyframes orbit-text{
     0%{
