@@ -19,7 +19,6 @@ body {
     background-color: #191919;
 }
 
-@media (max-width: 1119px) {
 nav.nav {
     z-index: 5;
     background-color: rgba(0, 0, 0, 0.3);
@@ -511,7 +510,7 @@ footer {
     max-height: 100vh;
     overflow: hidden;
 }
-}
+
 
 @keyframes orbit-text{
     0%{

@@ -19,7 +19,7 @@ body {
     background-color: #191919;
 }
 
-@media (min-width: 1120px) {
+
 nav.nav {
     z-index: 5;
     background-color: rgba(0, 0, 0, 0.3);
@@ -511,7 +511,7 @@ footer {
     max-height: 100vh;
     overflow: hidden;
 }
-}
+
 
 .name-btn {
     cursor: pointer;
