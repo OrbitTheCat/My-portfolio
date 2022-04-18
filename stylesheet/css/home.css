@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 * {
-	font-family: Inter, system-ui;
+	font-family: 'Roboto', sans-serif;
 }
 
-nav {
+header {
 	position: fixed;
 	height: 84px;
 	z-index: 2022;
@@ -12,13 +12,13 @@ nav {
 }
 
 .nav-wrapper {
-    z-index: 3 !important;
+    z-index: 9 !important;
     justify-content: center !important;
 	height: 80px;
 }
 
 .nav-list li a {
-	font-family: Grotesk, sans-serif !important;
+	font-family: 'Roboto', sans-serif !important;
 }
 
 .mobile ul.nav-list {
@@ -146,10 +146,10 @@ img.fa-github:hover {
 	border: 2px solid white;
 }
 .shine {
-    --start-color: #52057B;
-    --end-color: #2D4263;
+    --start-color: #314dc8;
+    --end-color: #FF0080;
     --start-color-2: #D72323;
-    --end-color-2: #FF0080;
+    --end-color-2: #850042;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
